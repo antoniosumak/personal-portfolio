@@ -1,0 +1,24 @@
+---
+import Section from './Section.astro';
+---
+
+<Section>
+  <div class='h-full w-full flex items-center flex-col justify-center'>
+    <h1 class='text-5xl font-bold text-gradient text-center'>
+      A frontend developer passionate about transforming design into user
+      interactable websites
+    </h1>
+    <button>Supp homie</button>
+  </div>
+</Section>
+
+<style>
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+</style>

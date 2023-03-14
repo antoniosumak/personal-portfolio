@@ -1,0 +1,28 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<header class='h-20 flex items-center sticky top-0 bg-white px-6 md: lg:px-8'>
+  <nav class='w-full flex items-center justify-between max-w-7xl mx-auto'>
+    <div><h2 class='text-gradient text-2xl font-bold'>Antonio Šumak</h2></div>
+    <ul class='md:flex items-center space-x-3 text-md hidden'>
+      <li><a href='#'>About</a></li>
+      <li><a href='#'>Contact</a></li>
+      <li class='px-4 py-3 rounded-md bg-primary text-white'>
+        <a href='#'>Projects</a>
+      </li>
+    </ul>
+    <Icon class='w-8 md:hidden hover:text-primary' name='gg:menu-right' />
+  </nav>
+</header>
+
+<style scoped>
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+</style>
