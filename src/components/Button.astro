@@ -1,0 +1,22 @@
+---
+const { text, buttonType } = Astro.props;
+
+export interface Props {
+  text: string;
+  buttonType: 'primary' | 'secondary';
+}
+---
+
+<button class={`${buttonType} px-4 py-2 rounded-md`}>
+  {text}
+</button>
+
+<style>
+  .primary {
+    @apply bg-primary text-white;
+  }
+
+  .secondary {
+    @apply bg-secondary text-white;
+  }
+</style>
